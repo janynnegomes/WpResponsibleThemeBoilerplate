@@ -1,0 +1,14 @@
+/*
+Theme Name: Wp Responsible Theme Boilerplate
+Theme URI: https://github.com/devnetgomez/WpResponsibleThemeBoilerplate
+Author: Janynne Gomes
+Description: This is a boilerplate for Wordpress theme on 3.6 Wordpress version
+
+Author URI: http://facebook.com/DiarioDeUmaProgramadorA
+Version: 1.0
+Tags: clean
+Text Domain: wpboilerplate
+*/
+
+@import url("css/elements.css");
+@import url("css/wordpress.css");

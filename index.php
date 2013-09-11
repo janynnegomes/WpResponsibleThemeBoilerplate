@@ -1,18 +1,8 @@
 <?php get_header();?>    
 
-<section id="slider">
-    <article>
-        <figure>Slider 1</figure>
-    </article>        
-    <article>
-        <figure>Slider 2</figure>
-    </article> 
-    <article>
-        <figure>Slider 3</figure>
-    </article>   
-</section>
+<?php get_template_part('slider');?>
 
-<section id="corpo">
+<section id="main-content">
 	<?php query_posts(array('post_type'=> 'livros'));?>
 	<?php 
 		if ( have_posts() ) {
@@ -21,11 +11,30 @@
 				the_post(); ?>
 				<article>
 			        <figure><img src="/img/foto.jpg"/></figure>
-			        <h1><?php the_title(); ?></h2>
+			        <h1><?php the_title(); ?></h1>
 			    </article>
 	<?php	} 
 		}?>    
+
+
+<?php get_sidebar('first'); ?>
+
 </section>
 
-<?php get_sidebar('interna'); ?>
+<section id="second-content">
+	<?php query_posts(array('post_type'=> 'livros'));?>
+	<?php 
+		if ( have_posts() ) {
+			while ( have_posts() )
+			{
+				the_post(); ?>
+				<article>
+			        <figure><img src="/img/foto.jpg"/></figure>
+			        <h1><?php the_title(); ?></h1>
+			    </article>
+	<?php	} 
+		}?>    
+<?php get_sidebar('second'); ?>
+</section>
+
 <?php get_footer();?>
