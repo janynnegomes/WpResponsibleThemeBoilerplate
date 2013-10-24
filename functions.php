@@ -19,6 +19,8 @@ require_once(get_template_directory().'/posts_personalizados/livros.php');
 require_once(get_template_directory().'/posts_personalizados/autores.php'); 
 
 
+
+
 if ( function_exists('register_sidebar') ) {
 register_sidebar(array(
 'name' => 'First Sidebar',
