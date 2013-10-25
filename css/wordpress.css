@@ -97,3 +97,20 @@ a img.aligncenter {
 {
 	color: #e23d54;
 }
+
+.attachment-post-thumbnail 
+{
+    width: 100%;
+    margin:0px;
+}
+
+.size-full
+{
+    width: 100% !important;
+    height: auto;
+}
+
+.menu li a 
+{
+    color:#fff;
+}

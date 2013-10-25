@@ -18,6 +18,9 @@ add_theme_support( 'custom-header', $defaults );
 require_once(get_template_directory().'/posts_personalizados/livros.php'); 
 require_once(get_template_directory().'/posts_personalizados/autores.php'); 
 
+require_once(get_template_directory().'/opcoes/geral.php'); 
+require_once(get_template_directory().'/opcoes/gera_css.php'); 
+
 
 
 
