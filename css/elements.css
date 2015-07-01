@@ -107,6 +107,8 @@ header div#header-content
 	margin-right: auto;
 	margin-left: auto;
 	width: 900px;
+	max-height: 300px;
+  	overflow: hidden;
 }
 
 header div#header-content figure
